@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.container{
+    background: #f0f0f0;
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 20px; */
+    justify-content: center;
+    padding: 20px;
+}
+.comment{
+    padding:25px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #888888;
+    grid-column: 1/4;
+    grid-row: 2/2;
+    justify-self: center;
+}
+.comment span{
+    font-weight: bold;
+    color: #0000FF;
+    
+}
+.image{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+}
+#rating{
+    justify-self: center;
+    /* font-size: 25px; */
+}
+
+
