@@ -25,3 +25,12 @@ for(let i=1; i<=10; i++){
     }
     console.log(`${i}`); // prints 1, 2, 3, 4
 }
+
+
+// learning break and continue
+for(let i=1; i<=10; i++){
+    if(i===5){
+        continue; // exit the loop when i is 5
+    }
+    console.log(i); // prints 1, 2, 3, 4
+}
