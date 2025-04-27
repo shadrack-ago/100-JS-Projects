@@ -4,3 +4,9 @@ for(let key in person){
 }
 
 //learn about for in loop
+
+//learning for...of loop
+const students =["eddy","mohammed","ahmed"]
+for(let student of students){
+    console.log(student);
+}
