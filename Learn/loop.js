@@ -10,3 +10,10 @@ const students =["eddy","mohammed","ahmed"]
 for(let student of students){
     console.log(student);
 }
+
+
+//learning forEach loop
+const numbers = [1,2,3,4,5]
+numbers.forEach((number,index)=>{
+    console.log(`index: ${index}, number: ${number}`)
+})
