@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #btn{
+        color: white;
+    }
+    #btn2{
+        color: orange;
+    }
+
+</style>
 <body>
     <p id="demo"></p>
     <div class="leaner">
 
     </div>
 
+    <button id="btn">HELLO</button>
+    <br><br>
+    <button id="btn2">none</button>
+    
     <script>
         document.getElementById("demo").textContent="I am loving it here!";
         const newElement= document.createElement('p');
@@ -20,7 +33,14 @@
        
 // leaner.removeChild(newElement);
 newElement.remove();
+     const button= document.getElementsByTagName("button")[0]; 
+     button.style.backgroundColor="red"; 
+     button.style.borderRadius="3px";
+ button.addEventListener("click", function(){
+    button.style.backgroundColor="blue"});
         
+button.setAttribute("id", "btn2");
+
         
     </script>
 </body>
