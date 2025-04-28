@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <div class="leaner">
+
+    </div>
+
+    <script>
+        document.getElementById("demo").textContent="I am loving it here!";
+        const newElement= document.createElement('p');
+        const leaner= document.querySelector('.leaner');
+        newElement.innerHTML="I am over coming myfears!";
+        leaner.appendChild(newElement);
+       
+
+        
+    </script>
+</body>
+</html>
