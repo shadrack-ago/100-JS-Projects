@@ -14,11 +14,13 @@
     <script>
         document.getElementById("demo").textContent="I am loving it here!";
         const newElement= document.createElement('p');
-        const leaner= document.querySelector('.leaner');
         newElement.innerHTML="I am over coming myfears!";
+        const leaner= document.querySelector('.leaner');
         leaner.appendChild(newElement);
        
-
+// leaner.removeChild(newElement);
+newElement.remove();
+        
         
     </script>
 </body>
