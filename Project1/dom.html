@@ -23,6 +23,14 @@
     <button id="btn">HELLO</button>
     <br><br>
     <button id="btn2">none</button>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
     
     <script>
         document.getElementById("demo").textContent="I am loving it here!";
@@ -40,6 +48,13 @@ newElement.remove();
     button.style.backgroundColor="blue"});
         
 button.setAttribute("id", "btn2");
+
+
+for (let i=1; i<=5; i++){
+    const Item= document.createElement("li");
+    Item.innerHTML=`Item ${i}`;
+    document.querySelector("ul").appendChild(Item);
+}
 
         
     </script>
