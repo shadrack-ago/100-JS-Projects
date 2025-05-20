@@ -40,3 +40,5 @@ const testimonials = [
       updateTestimonial();
     }, 10000);
   }
+
+  
